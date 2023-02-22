@@ -172,7 +172,7 @@ dotnet_diagnostic.CA1810.severity = error
 dotnet_diagnostic.CA1821.severity = error
 
 # Make member static
-dotnet_diagnostic.CA1822.severity = warning
+# dotnet_diagnostic.CA1822.severity = error
 # dotnet_code_quality.CA1822.api_surface = private, internal
 
 # Avoid unused private fields
@@ -329,7 +329,7 @@ dotnet_diagnostic.IDE0059.severity = error
 dotnet_diagnostic.IDE0060.severity = error
 
 # Make local function static
-dotnet_diagnostic.IDE0062.severity = warning
+# dotnet_diagnostic.IDE0062.severity = error
 
 # Convert to file-scoped namespace
 dotnet_diagnostic.IDE0161.severity = error

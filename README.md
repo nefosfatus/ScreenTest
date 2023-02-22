@@ -16,5 +16,5 @@ WaybillsController.
 
 - Необходимо реализовать все метки TODO
 - Имеющиеся в проекте юнит-тесты должны выполняться
-- Работа с БД должна быть реализована с помощью Entity Framework (см. DeliveryDbContext), 
-провайдер - любой на базе SQL или "in memory" (уже установлен пакет Microsoft.EntityFrameworkCore.InMemory)
+- Работа с СУБД должна быть реализована с помощью Entity Framework (см. DeliveryDbContext),
+  провайдер - любой на базе SQL или "in memory" (уже установлен пакет Microsoft.EntityFrameworkCore.InMemory)

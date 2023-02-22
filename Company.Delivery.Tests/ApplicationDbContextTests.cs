@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace Company.Delivery.Examine;
+namespace Company.Delivery.Tests;
 
 public class ApplicationDbContextTests
 {
@@ -10,7 +10,7 @@ public class ApplicationDbContextTests
     public void StringPropertiesHasMaxLength()
     {
         var options = new DbContextOptionsBuilder<DeliveryDbContext>().UseInMemoryDatabase(Database.Database.Name).Options;
-        var dbContext = new DeliveryDbContext(options);
+        using var dbContext = new DeliveryDbContext(options);
 
         var stringType = typeof(string);
 

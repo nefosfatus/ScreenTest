@@ -12,4 +12,8 @@
       <ProjectReference Include="..\Company.Delivery.Database\Company.Delivery.Database.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+    </ItemGroup>
+
 </Project>

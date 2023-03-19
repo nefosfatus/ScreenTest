@@ -1,5 +1,12 @@
-﻿namespace Company.Delivery.Core;
+﻿using Microsoft.EntityFrameworkCore;
 
+namespace Company.Delivery.Core;
+
+/// <summary>
+/// Отдельный предмет или часть груза,
+/// которые перевозятся из одного места в другое.
+/// </summary>
+[Index(nameof(Number), IsUnique = true)]
 public class CargoItem
 {
     public Guid Id { get; set; }
@@ -8,7 +15,7 @@ public class CargoItem
 
     public Waybill? Waybill { get; set; }
 
-    // TODO: Уникальное значение в пределах сущности Waybill
+    //Уникальное в рамках накладной
     public string Number { get; set; } = null!;
 
     public string Name { get; set; } = null!;
